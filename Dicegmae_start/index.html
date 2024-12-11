@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="./diceBoardDate.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="date">
+      <p id="date">Date: </p>
+    </div>
+    <div class="day-name">
+      <p> 
+        <span class="day" id="day"> 
+          DD/MM/YYYY
+        </span>
+        at
+        <span id="hour">HH</span>:<span id="min">MM</span>
+      </p> 
+    </div>
+    <br>
+    <div class="dices">
+      <div class="dice">
+        <img src="dice-1.svg" alt="dice" id="leftDice">
+        <p class="dice-label">Dice 1</p>
+      </div>
+      <div class="dice">
+        <img src="dice-1.svg" alt="dice" id="rightDice">
+        <p class="dice-label">Dice 2</p>
+      </div>
+    </div>
+    <br>
+      <button class="rollButton" id="roll">Roll Dice</button>
+    <br>
+      <div class="message">
+        Total: <span id="total">2</span>
+        <br>
+        more than 8: <span id="more-than-10">Win</span>
+        <br>
+        less than 8: <span id="less-than-10">Lose</span>
+        <br>
+        <br>
+        <h3 id="winMessage"></h1>
+      </div>
+      </div>
+
+  <script src="script.js"></script>
+  <script src="./diceRoll.js"></script>
+</body>
+
+</html>
